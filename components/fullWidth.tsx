@@ -51,7 +51,7 @@ function routesMaker(pathsplit: string[]) {
   return routes;
 }
 
-const AppLayout = (props: React.PropsWithChildren<Props>) => {
+const FullWdth = (props: React.PropsWithChildren<Props>) => {
   const [isCollapsed, setIsCollapsed] = useState(false);
 
   const onChangeIsCollapsed = (isCollapsed: boolean) => {
@@ -108,18 +108,19 @@ const AppLayout = (props: React.PropsWithChildren<Props>) => {
         />
 
 
-
-        <Content
-          className="site-layout-background"
-          style={{
-            padding: 48,
-            minHeight: 100,
-            backgroundColor: '#ffffff',
-          }}
-        >
-          {props.children}
-        </Content>
-
+        <Layout className="site-layout-background" style={{}}>
+          <Sider className="site-layout-background" width={400}></Sider>
+          <Content
+            className="site-layout-background"
+            style={{
+              padding: 48,
+              minHeight: 100,
+              backgroundColor: '#ffffff',
+            }}
+          >
+            {props.children}
+          </Content>
+        </Layout>
       </Layout>
 
       <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
@@ -129,4 +130,4 @@ const AppLayout = (props: React.PropsWithChildren<Props>) => {
   );
 };
 
-export default withRouter(AppLayout);
+export default withRouter(FullWdth);
