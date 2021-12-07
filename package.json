@@ -22,7 +22,10 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "remark": "^14.0.2",
-    "remark-html": "^15.0.1"
+    "remark-html": "^15.0.1",
+    "classnames": "2.2.6",
+    "date-fns": "2.16.1",
+    "gray-matter": "4.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.13.10",
@@ -34,6 +37,8 @@
     "@zeit/next-css": "^1.0.1",
     "babel-loader": "^8.2.2",
     "typescript": "3.8.3",
-    "webpack": "^4.44.0"
+    "webpack": "^4.44.0",
+    "autoprefixer": "^10.2.1",
+    "postcss": "^8.2.4"
   }
 }
